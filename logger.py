@@ -4,7 +4,7 @@
 """
 Author:         ottocho
 Filename:       logger.py
-Last modified:  2013-12-07 23:52
+Last modified:  2013-12-08 01:17
 Description:    a simple logger
 """
 
@@ -23,8 +23,8 @@ def get_file_handler(logger_name, log_path):
         `logger_name`: name of the logger
         `log_path`: location of the logs
     '''
-    log_path = os.path.join(log_path, logger_name)
-    rotating_file_handler = TimedRotatingFileHandler(log_path, 'D', 1, 0)
+    log_file_path = os.path.join(log_path, logger_name)
+    rotating_file_handler = TimedRotatingFileHandler(log_file_path, 'D', 1, 0)
     rotating_file_handler.suffix = "%Y%m%d.%H%M%S.log"
     log_format = '%(name)-12s %(asctime)s %(levelname)-8s %(message)s'
     time_format = '%Y-%m-%d %H:%M:%S'

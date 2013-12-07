@@ -4,7 +4,7 @@
 """
 Author:         ottocho
 Filename:       test.py
-Last modified:  2013-12-07 23:58
+Last modified:  2013-12-08 01:18
 Description:
     test the logger
 
