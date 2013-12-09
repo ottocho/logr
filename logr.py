@@ -3,7 +3,7 @@
 
 """
 Author:         ottocho
-Filename:       logger.py
+Filename:       logr.py
 Last modified:  2013-12-08 01:17
 Description:    a simple logger
 """
