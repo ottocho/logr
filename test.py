@@ -4,19 +4,17 @@
 """
 Author:         ottocho
 Filename:       test.py
-Last modified:  2013-12-08 01:18
+Last modified:  2014-01-01 17:36
 Description:
-    test the logger
-
+    test the logger from logr
 """
 
-from logger import *
+import logr
 import time
 
-LOG_DIR = '/tmp/'
+LOG_FILE_PATH = '/tmp/test'
 
-logger = get_logger('test', LOG_DIR)
-
+logger = logr.get_logger('test', LOG_FILE_PATH)
 logger.debug('debug')
 logger.info('info')
 logger.warning('warning')

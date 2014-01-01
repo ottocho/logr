@@ -1,4 +1,4 @@
-logger
+logr
 ======
 
 We always need(or must) write log. But I am sick about config the logging time and time again.
@@ -7,12 +7,12 @@ the function `get_logger` return the logger which logs on file `log_path/logger_
 
 Usage:
 
-    from logger import *
+    import logr
     import time
 
-    LOG_DIR = '/home/ottocho/log/'
+    LOG_FILE_PATH = '/tmp/test'
 
-    logger = get_logger('test', LOG_DIR)
+    logger = logr.get_logger('test', LOG_FILE_PATH)
     logger.debug('debug')
     logger.info('info')
     logger.warning('warning')
