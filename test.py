@@ -4,7 +4,7 @@
 """
 Author:         ottocho
 Filename:       test.py
-Last modified:  2014-01-01 17:36
+Last modified:  2014-05-22 23:11
 Description:
     test the logger from logr
 """
@@ -12,7 +12,7 @@ Description:
 import logr
 import time
 
-LOG_FILE_PATH = '/tmp/test'
+LOG_FILE_PATH = '/tmp/test.log'
 
 logger = logr.get_logger('test', LOG_FILE_PATH)
 logger.debug('debug')
@@ -34,3 +34,7 @@ def error_devide():
 aobj = AClass()
 aobj.a_method()
 error_devide()
+
+class A(object):
+    pass
+a = A()
