@@ -3,7 +3,9 @@ logr
 
 We always need(or must) write log. But I am sick about config the logging time and time again.
 
-the function `get_logger` return the logger which logs on file `log_path/logger_name`, and rotates it daily.
+A simplfied logger mainly from [tornado.log](https://github.com/tornadoweb/tornado/commits/master/tornado/log.py) that reducing package dependencies.
+
+The function `get_logger` return the logger which logs on file `log_path/logger_name`, and rotates it daily.
 
 Usage:
 
